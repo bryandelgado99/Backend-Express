@@ -1,18 +1,29 @@
-const {Router} = require('express')
+const{Router} = require('express')
 
-//Instanciamos la clase
-const router = Router() 
+const router = Router()
 
-//Rutas púbicas
-router.get('/', (req, res) =>{
-    res.render('index')
-})
+const { renderAllPortafolios,
+        renderPortafolio,
+        renderPortafolioForm,
+        createNewPortafolio,
+        renderEditPortafolioForm,
+        updatePortafolio,
+        deletePortafolio
+    } = require('../controllers/portfolio.controller.js')
 
-router.get('/login', (req, res) =>{
-    res.render('login')
-})
+/*Create*/
+router.get('/portafolio/add', renderPortafolioForm)
+router.post('/portafolio/add', createNewPortafolio)
 
-//Rutas Privadas
+/*Read*/
+router.get('/portafolios', renderAllPortafolios)
+router.get('/portafolio/:id', renderPortafolio)
 
-//Exportamos el módulo
+/*Update*/
+router.get('/portafolio/edit/:id', renderEditPortafolioForm)
+router.put('/portafolio/edit/:id', updatePortafolio)
+
+/*Delete*/
+router.delete('/portafolio/delete/:id', deletePortafolio)
+
 module.exports = router
