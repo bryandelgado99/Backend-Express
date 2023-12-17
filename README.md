@@ -68,10 +68,10 @@ npm run dev
 
 ## Vistas previas del proyecto
 ### Ruta Raíz "/"
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/d18646c77b32a0b02208802c4ce19f70fb7b467c/images/home.png)
 
 ### Ruta Login "/login"
 ![]()
 
-## Ruta Nuevo Portafolio "portafolio/add"
+### Ruta Nuevo Portafolio "portafolio/add"
 ![]()
