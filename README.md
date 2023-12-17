@@ -52,6 +52,26 @@ Para acceder al proyecto, se debe realizar la clonación del repositorio mediant
 ~~~
 git clone https://github.com/bryandelgado99/Backend-Express.git
 ~~~
-> [!NOTE]
+> [!IMPORTANT]
 > Una vez clonado el repositorio se debe correr, por terminal, el comando *__npm i__* para poder instalar las dependencias correspondientes al proyecto.
 
+## Iniciar el proyecto
+Para iniciar el proyceto se debe correr el comando en producción:
+~~~
+npm start
+~~~
+
+Si se quiere correr el mismo como proyecto de desarrollo, se usa el comando:
+~~~
+npm run dev
+~~~
+
+## Vistas previas del proyecto
+### Ruta Raíz "/"
+![]()
+
+### Ruta Login "/login"
+![]()
+
+## Ruta Nuevo Portafolio "portafolio/add"
+![]()
