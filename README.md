@@ -52,4 +52,6 @@ Para acceder al proyecto, se debe realizar la clonación del repositorio mediant
 ~~~
 git clone https://github.com/bryandelgado99/Backend-Express.git
 ~~~
+> [!NOTE]
+> Una vez clonado el repositorio se debe correr, por terminal, el comando *__npm i__* para poder instalar las dependencias correspondientes al proyecto.
 
