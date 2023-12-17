@@ -74,4 +74,4 @@ npm run dev
 ![](https://github.com/bryandelgado99/Backend-Express/blob/a8e4ba9490d12b4e127a9dff32591d42e0af4785/images/login.png)
 
 ### Ruta Nuevo Portafolio "portafolio/add"
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/c0686430a1fe1b5b20c2c33da8ac8c14ca0ed1b5/images/new_folio.png)
