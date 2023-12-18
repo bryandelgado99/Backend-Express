@@ -5,10 +5,11 @@ const renderRegisterForm =(req,res)=>{
     res.render('user/registerForm')
 }
 
-//-----------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
 const registerNewUser = async(req,res)=>{
     
-    const{name,email,password,confirmpassword} = req.body
+    const {name,email,password,confirmpassword} = req.body
+    console.log(req.body)
     
     if (Object.values(req.body).includes("")) return res.send("Lo sentimos, debes llenar todos los campos")
 
@@ -21,19 +22,24 @@ const registerNewUser = async(req,res)=>{
     newUser.save()
     res.redirect('/user/login')
 }
+//*-----------------------------------------------------------------------------------------------------------
 
 const renderLoginForm =(req,res)=>{
     res.render('user/loginForm')
 }
 
-//--------------------------------------------------------------------------
+//---------------------------------------------------------
 const loginUser = passport.authenticate('local',{
     failureRedirect:'/user/login',
     successRedirect:'/portafolios'
 })
+//---------------------------------------------------------
 
 const logoutUser =(req,res)=>{
-    res.send('logout user')
+    req.logout((err)=>{
+        if (err) return res.send("Ocurrio un error") 
+        res.redirect('/');
+    });
 }
 
 module.exports={
