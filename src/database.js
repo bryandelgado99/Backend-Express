@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
 
+<<<<<<< HEAD
 const MONGODB_URI="mongodb://localhost:27017/portfolio"
+=======
+const MONGODB_URI = "mongodb://localhost:27017/portafolio";
+>>>>>>> 365d14cce58c33eb8031aea89a72f9730a1a5154
 
 //Crear método de conexión
 connection = async()=>{
