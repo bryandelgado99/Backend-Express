@@ -3,8 +3,6 @@ const User = require('../models/User')
 
 const LocalStrategy = require('passport-local').Strategy
 
-
-
 passport.use(new LocalStrategy({
     usernameField:'email',
     passwordField:'password'
@@ -27,4 +25,4 @@ passport.serializeUser((user,done)=>{
 passport.deserializeUser(async (id, done) => {
     const userDB  = await User.findById(id).exec();
     return done(null,userDB)
-})
+});
