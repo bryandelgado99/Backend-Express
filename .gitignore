@@ -1,5 +1,9 @@
 #Folders and paths
 node_modules
+uploads
+dist
+
 
 #Files
 .env
+tailwind.config.js
