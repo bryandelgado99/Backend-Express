@@ -7,6 +7,10 @@ cloudinary.config({
     secure: true
 });
 
+module.exports.deleteImage = async (publicId)=>{
+    return await cloudinary.uploader.destroy(publicId)
+}
+
 module.exports.uploadImage = async(filePath) => {
     return await cloudinary.uploader.upload(filePath,{folder:'portafolio'})
 }
