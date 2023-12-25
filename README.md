@@ -84,16 +84,21 @@ npm run dev
 > Cada usuario posee su respectivo login y a este se vincula cada portafolio creado, mediante el UserID.
 
 ### Acceso al login
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/log_b.png)
+![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/home_b.png)
 
 ### Acceso al registro
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/reg_b.png)
 
 ### Creación de portafolios
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/new_folio.png)
+![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/port_b.png)
 
 ### Presentación en MongoDB
-![]()
+- Portafolio
+    ![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/port_db.png)
+- Usuario
+  ![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/user_db.png)
 
 ### Presentación en Cloudinary
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/cloudy_b.png)
