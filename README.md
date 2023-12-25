@@ -1,6 +1,6 @@
-# Backend-Express
+# Backend-Express - Register/Login/Cloudinary
 
-El siguiente proyecto presenta el desarrollo de una portafolio web, mediante Express.JS, Handlebars; admeás de contar con el manejo de rutas, controladores y renders.
+El siguiente proyecto presenta el desarrollo de una portafolio web, mediante Express.JS, Handlebars; admeás de contar con el manejo de rutas, controladores y renders. Además, en estea rama se presenta el uso de Cloduinary para la subida de imágenes web, se incorpora el registro del usuario y su respectibo login de sesión. 
 
 ## Árbol de Trabajo
 ```
@@ -75,3 +75,25 @@ npm run dev
 
 ### Ruta Nuevo Portafolio "portafolio/add"
 ![](https://github.com/bryandelgado99/Backend-Express/blob/c0686430a1fe1b5b20c2c33da8ac8c14ca0ed1b5/images/new_folio.png)
+
+---
+
+## Nuevas incorporaciones prácticas al proyecto
+
+> [!NOTE]
+> Cada usuario posee su respectivo login y a este se vincula cada portafolio creado, mediante el UserID.
+
+### Acceso al login
+![]()
+
+### Acceso al registro
+![]()
+
+### Creación de portafolios
+![]()
+
+### Presentación en MongoDB
+![]()
+
+### Presentación en Cloudinary
+![]()
