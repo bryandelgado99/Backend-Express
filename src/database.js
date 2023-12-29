@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const url = "mongodb://0.0.0.0:27017/portafolio";
+//const url = "mongodb://0.0.0.0:27017/portafolio";
 
 /*Crear método de conexión/*
 connection = async()=>{
@@ -12,12 +12,15 @@ connection = async()=>{
     }
 }*/
 
-connection =  async() =>{
-    try{
-        await mongoose.connect(process.env["MONGO_URI_ATLAS"]);
-        console.log("La conexión con MongoDB ha sido existosa");
-    }catch(err){
-        console.error("Error en la conexión a MongoDB:", err);
+const string_conn = "mongodb+srv://bryande9970:bryandelgado99@cluster001.zj6u1tq.mongodb.net/?retryWrites=true&w=majority"
+
+//Crear método de conexión
+connection = async()=>{
+    try {
+        await mongoose.connect(string_conn)
+        console.log('Database is connected to porfolio')
+    } catch (error) {
+        console.log(error);
     }
 }
 
