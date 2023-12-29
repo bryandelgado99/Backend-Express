@@ -102,3 +102,14 @@ npm run dev
 
 ### Presentación en Cloudinary
 ![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/cloudy_b.png)
+
+---
+
+### Envio de Correo de confirmación
+![]()
+
+### Listado de portafolios
+![]()
+
+### Envio de correo en contacto
+![]()
