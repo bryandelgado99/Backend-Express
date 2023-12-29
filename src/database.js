@@ -12,7 +12,7 @@ connection = async()=>{
     }
 }*/
 
-const string_conn = "mongodb+srv://bryande9970:bryandelgado99@cluster001.zj6u1tq.mongodb.net/?retryWrites=true&w=majority"
+const string_conn = "mongodb+srv://bryand9970:bryandelgado99@cluster001.zj6u1tq.mongodb.net/?retryWrites=true&w=majority"
 
 //Crear método de conexión
 connection = async()=>{
