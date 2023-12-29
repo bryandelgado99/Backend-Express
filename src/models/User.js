@@ -5,18 +5,26 @@ const bcrypt = require('bcryptjs')
 
 //Creamos el esquema
 const userSchema = new Schema({
-    name:{
-        type:String,
-        require:true
-    },
-    email:{
-        type:String,
-        require:true
-    },
-    password :{
-        type:String,
-        require:true
-    },
+        name:{
+            type:String,
+            require:true
+        },
+        email:{
+            type:String,
+            require:true
+        },
+        password :{
+            type:String,
+            require:true
+        },
+        token:{
+            type:String,
+            default:null
+        },
+        confirmEmail:{
+            type:Boolean,
+            default:false
+        }
     },
     
     {
@@ -34,6 +42,11 @@ userSchema.methods.encrypPassword = async (password)=>{
 userSchema.methods.matchPassword = async function(password){
     const response = await bcrypt.compare(password,this.password)
     return response
+}
+
+// Método para crear un token
+userSchema.methods.crearToken = function(){
+    return token = this.token = Math.random().toString(36).slice(2)
 }
 
 //Exportamos el modelo
