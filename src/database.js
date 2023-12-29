@@ -12,11 +12,9 @@ connection = async()=>{
     }
 }*/
 
-const conn_str = `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASSWORD}@cluster001.zj6u1tq.mongodb.net/?retryWrites=true&w=majority`
-
 connection =  async() =>{
     try{
-        await mongoose.connect(conn_str);
+        await mongoose.connect(process.env["MONGO_URI_ATLAS"]);
         console.log("La conexión con MongoDB ha sido existosa");
     }catch(err){
         console.error("Error en la conexión a MongoDB:", err);
