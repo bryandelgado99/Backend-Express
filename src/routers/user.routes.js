@@ -1,11 +1,13 @@
 const { redirectIfAuthenticated } = require('../helpers/validate-auth')
 const {Router} = require('express')
-const {renderRegisterForm, registerNewUser, renderLoginForm, loginUser, logoutUser} = require('../controllers/user.controller')
+const { renderRegisterForm, registerNewUser, renderLoginForm, loginUser, logoutUser,confirmEmail} = require('../controllers/user.controller')
+
 const router = Router()
 
 
 router.get('/user/register',renderRegisterForm)
 router.post('/user/register',registerNewUser)
+router.get('/user/confirmar/:token',confirmEmail)
 
 
 router.get('/user/login', redirectIfAuthenticated, renderLoginForm)

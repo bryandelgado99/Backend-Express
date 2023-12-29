@@ -1,15 +1,14 @@
 const mongoose = require('mongoose')
 
-const MONGODB_URI="mongodb://localhost:27017/portfolio"
+const url = "mongodb://0.0.0.0:27017/portafolio";
 
 //Crear método de conexión
 connection = async()=>{
     try {
-        await mongoose.connect(MONGODB_URI)
-        console.log('Database is connected to porfolio')
+        await mongoose.connect(process.env["MONGODB_URI "] || url)
+        console.log('Database is connected to DB: porfolio')
     } catch (error) {
         console.log(error);
     }
 }
-
 module.exports = connection
