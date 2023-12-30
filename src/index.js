@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 
 //Importamos variable app
 const app = require('./server.js')
