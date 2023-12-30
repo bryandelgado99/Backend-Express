@@ -103,13 +103,15 @@ npm run dev
 ### Presentación en Cloudinary
 ![](https://github.com/bryandelgado99/Backend-Express/blob/77913dc477713f2d6043d8ca67d75ec7a7cb4bb1/images/cloudy_b.png)
 
+### Conexión con MongoDB Atlas
+Para poder tener un manejo de los datos de manera eficaz y que la base no presente coflictos, se hace la conexión a MongoDB Atlas. 
+![](https://github.com/bryandelgado99/Backend-Express/blob/6b82e0698b5401e5a51ece6a784014f162710581/images/db_atlas.png)
+
 ---
 
 ### Envio de Correo de confirmación
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/6b82e0698b5401e5a51ece6a784014f162710581/images/mail_confrm.png)
 
 ### Listado de portafolios
-![]()
-
-### Envio de correo en contacto
-![]()
+![](https://github.com/bryandelgado99/Backend-Express/blob/6b82e0698b5401e5a51ece6a784014f162710581/images/lista_prt_a.png)  
+![](https://github.com/bryandelgado99/Backend-Express/blob/6b82e0698b5401e5a51ece6a784014f162710581/images/lista_prt_pw.png)
