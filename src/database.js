@@ -1,12 +1,11 @@
 const mongoose = require('mongoose')
 
-const conn_local = "mongodb://127.0.0.1:27017/portfolio"
-const conn_atlas = "mongodb+srv://bryande9970:bryandelgado99@cluster001.zj6u1tq.mongodb.net/?retryWrites=true&w=majority"
+const conn_atlas = `mongodb+srv://${process.env.ATLAS_USER}:${process.env.ATLAS_PASS}@cluster001.zj6u1tq.mongodb.net/?retryWrites=true&w=majority`
 
 //Crear método de conexión
 connection = async()=>{
     try {
-        await mongoose.connect(conn_local || conn_atlas || conn_local__alt)
+        await mongoose.connect(conn_atlas )
         console.log('Database is connected to porfolio')
     } catch (error) {
         console.log(error);
