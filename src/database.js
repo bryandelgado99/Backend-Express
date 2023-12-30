@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 
-const conn_local = "mongodb://localhost:27017/portfolio"
-const conn_local__alt = "mongodb://0.0.0.0:27017/portfolio"
+const conn_local = "mongodb://127.0.0.1:27017/portfolio"
 const conn_atlas = "mongodb+srv://bryande9970:bryandelgado99@cluster001.zj6u1tq.mongodb.net/?retryWrites=true&w=majority"
 
 //Crear método de conexión
