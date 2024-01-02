@@ -1,4 +1,4 @@
-# Backend-Express - Register/Login/Cloudinary
+# Backend-Express - Portfolio Web Developer
 
 El siguiente proyecto presenta el desarrollo de una portafolio web, mediante Express.JS, Handlebars; admeás de contar con el manejo de rutas, controladores y renders. Además, en estea rama se presenta el uso de Cloduinary para la subida de imágenes web, se incorpora el registro del usuario y su respectibo login de sesión. 
 
