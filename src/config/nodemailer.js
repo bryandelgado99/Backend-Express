@@ -18,7 +18,7 @@ module.exports.sendMailToUser = async(userMail,token)=>{
         from: 'admin@esfot.com',
         to: userMail,
         subject: "Verifica tu cuenta de correo electrónico",
-        html: `<a href="http://localhost:3000/user/confirmar/${token}">Clic para confirmar tu cuenta</a>`,
+        html: `<a href="https://service-folios.onrender.com/user/confirmar/${token}">Clic para confirmar tu cuenta</a>`,
     });
     console.log("Message sent: %s", info.messageId);
 }
